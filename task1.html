@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width>
+  <title>Login Page</title>
+  <style>
+    /* Basic reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+    }
+
+    .login-container {
+      background: #fff;
+      padding: 40px 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+      width: 320px;
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .login-container h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .input-group {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .input-group label {
+      font-size: 14px;
+      color: #555;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 14px;
+      transition: all 0.3s ease;
+    }
+
+    .input-group input:focus {
+      border-color: #667eea;
+      box-shadow: 0 0 5px rgba(102, 126, 234, 0.5);
+    }
+
+    .btn {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      width: 100%;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: linear-gradient(135deg, #5a67d8, #6b46c1);
+    }
+
+    .links {
+      margin-top: 15px;
+      font-size: 13px;
+    }
+
+    .links a {
+      color: #667eea;
+      text-decoration: none;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <h2>Login</h2>
+    <form action="#">
+      <div class="input-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="Enter username" required>
+      </div>
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter password" required>
+      </div>
+      <button type="submit" class="btn">Login</button>
+      <div class="links">
+        <p>Forgot your password? <a href="#">Reset here</a></p>
+        <p>Don’t have an account? <a href="#">Sign up</a></p>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
